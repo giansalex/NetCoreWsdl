@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{49EEB749-49B3-4683-8148-CA189C50986A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8D661F8C-F6C8-4E09-88F1-7658F60C5BB0}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "WsSunat", "src\WsSunat\WsSunat.xproj", "{F89D58A8-CD29-43AC-AC8D-9AE139FA81D0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{ED9B4C7A-A607-4464-A2A9-78E10BD16752}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "WsSunatTest", "test\WsSunatTest\WsSunatTest.xproj", "{A60400E1-FA3C-4C3B-9FD5-958BCC468A0F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F89D58A8-CD29-43AC-AC8D-9AE139FA81D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F89D58A8-CD29-43AC-AC8D-9AE139FA81D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F89D58A8-CD29-43AC-AC8D-9AE139FA81D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F89D58A8-CD29-43AC-AC8D-9AE139FA81D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A60400E1-FA3C-4C3B-9FD5-958BCC468A0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A60400E1-FA3C-4C3B-9FD5-958BCC468A0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A60400E1-FA3C-4C3B-9FD5-958BCC468A0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A60400E1-FA3C-4C3B-9FD5-958BCC468A0F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F89D58A8-CD29-43AC-AC8D-9AE139FA81D0} = {49EEB749-49B3-4683-8148-CA189C50986A}
+		{A60400E1-FA3C-4C3B-9FD5-958BCC468A0F} = {ED9B4C7A-A607-4464-A2A9-78E10BD16752}
+	EndGlobalSection
+EndGlobal
