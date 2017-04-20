@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Net.Http;
+using System.Threading.Tasks;
 using System.Xml.Linq;
 
 namespace WsSunat
@@ -9,7 +10,7 @@ namespace WsSunat
     {
         private const string Domain = "https://e-beta.sunat.gob.pe/ol-ti-itcpfegem-beta/billService";
 
-        public async void Run()
+        public async Task<string> Run()
         {
             using (var client = new HttpClient())
             {
@@ -26,6 +27,7 @@ namespace WsSunat
                     var bytes = Convert.FromBase64String(base64);
                     var filename = @"E:\GIANCARLOS\file2.zip";
                     File.WriteAllBytes(filename, bytes);
+                    return filename;
                 }
                 
             }

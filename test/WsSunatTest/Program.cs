@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using WsSunat;
 
 namespace WsSunatTest
@@ -8,10 +9,16 @@ namespace WsSunatTest
         public static void Main(string[] args)
         {
             Console.WriteLine("Starting");
-            var s = new SunatWs();
-            s.Run();
+            Run();
             Console.WriteLine("Completed!");
             Console.ReadKey(true);
+        }
+
+        public static async void Run()
+        {
+            var s = new SunatWs();
+            var filename = await s.Run();
+            //Process.Start(filename);
         }
     }
 }
